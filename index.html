@@ -18,8 +18,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Idriss Boussane — IT Leader · Operations, Security Governance &amp; Service Delivery</title>
-<meta name="description" content="Career record of Idriss Boussane, IT Leader. Ten years of IT operations, security governance, vendor risk and service delivery across SaaS, financial and BPO organizations.">
+<title>Idriss Boussane — IT Operations & Security Leader</title>
+<meta name="description" content="Idriss Boussane — IT Operations & Security Leader building governance, service delivery, identity, infrastructure and security capabilities across international organizations.">
 <meta name="theme-color" content="#0a0a09">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -693,8 +693,39 @@
     .rv{opacity:1;transform:none}
   }
 </style>
+
+<style>
+  /* Executive refinement layer */
+  #scrollProgress{position:fixed;left:0;top:42px;height:2px;width:0;z-index:80;background:linear-gradient(90deg,var(--sig),var(--hl));box-shadow:0 0 18px var(--glow);pointer-events:none}
+  .masthead::before{content:'';position:absolute;inset:42px 0 auto 0;height:520px;pointer-events:none;background:radial-gradient(circle at var(--mx,72%) var(--my,22%),var(--glow),transparent 42%);opacity:.9}
+  .masthead{position:relative;overflow:hidden}
+  .executive-lede{max-width:68ch}
+  .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:2.2rem;border:1px solid var(--line);background:var(--line);max-width:900px}
+  .impact-card{background:var(--panel);padding:1rem 1.05rem 1.15rem;min-height:104px;position:relative;overflow:hidden;transition:transform .22s ease,background .22s ease}
+  .impact-card::after{content:'';position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--hl);transition:width .35s ease}
+  .impact-card:hover{transform:translateY(-3px);background:var(--panel-2)}
+  .impact-card:hover::after{width:100%}
+  .impact-card strong{display:block;font-family:var(--disp);font-size:2rem;line-height:1;color:var(--sig);letter-spacing:-.03em}
+  .impact-card span{display:block;margin-top:.55rem;font-family:var(--mono);font-size:8.5px;line-height:1.5;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+  .posting{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+  .posting:hover{transform:translateX(4px);box-shadow:-8px 0 24px var(--glow)}
+  .entry-main{transition:transform .22s ease}
+  .entry:hover .entry-main{transform:translateX(3px)}
+  .entry:hover .entry-title{color:var(--hl)}
+  .comp article,.env-row,.cred-item{transition:transform .2s ease,background .2s ease,border-color .2s ease}
+  .comp article:hover{transform:translateY(-3px);background:var(--panel-2)}
+  .env-row:hover{background:var(--panel-2)}
+  .cred-item:hover{border-left-color:var(--hl);transform:translateX(3px)}
+  .section-meter{height:1px;background:linear-gradient(90deg,var(--sig),var(--hl));transform-origin:left;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+  .rv.in .section-meter{transform:scaleX(1)}
+  @media (max-width:900px){.impact-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.impact-grid{grid-template-columns:1fr}.impact-card{min-height:auto}}
+  @media (prefers-reduced-motion:reduce){#scrollProgress{display:none}.impact-card,.posting,.entry-main,.comp article,.cred-item{transition:none!important;transform:none!important}.masthead::before{display:none}}
+</style>
+
 </head>
 <body class="booting">
+<div id="scrollProgress" aria-hidden="true"></div>
 
 <div id="boot" role="status" aria-live="polite">
   <div class="boot-in">
@@ -748,28 +779,32 @@
 <header class="masthead">
   <div class="wrap" style="position:relative">
     <div class="avatar-dock" id="avatarDock"><span class="mono">Mohammedia · GMT+1</span></div>
-    <div class="mono kicker">IT Leader — OPERATIONS, SECURITY GOVERNANCE &amp; SERVICE DELIVERY &nbsp;//&nbsp; <b>MOHAMMEDIA, MOROCCO</b></div>
+    <div class="mono kicker">IT OPERATIONS &amp; SECURITY LEADER &nbsp;//&nbsp; <b>MOHAMMEDIA, MOROCCO</b></div>
     <h1>Idriss<br><em>Boussane</em></h1>
-    <div class="masthead-sub">2017&nbsp;&nbsp;—&nbsp;&nbsp;2026</div>
-    <p class="lede">
-      Ten years of IT, written up as a record of what was built and owned rather than what fitted in a job description.
-      Twenty-four entries across three eras — from service-desk operations at volume, through project and security delivery,
-      to owning the governance, vendor risk, and service delivery function of an international SaaS organization.
-      <em>The hands-on depth is current, not residual.</em>
+    <div class="masthead-sub">GOVERNANCE · SERVICE DELIVERY · SECURITY · INFRASTRUCTURE</div>
+    <p class="lede executive-lede">
+      I build the IT operating layer that lets growing organizations scale with control: <em>governance, risk, service delivery, identity, infrastructure and security.</em>
+      My career has progressed from high-volume operations to end-to-end project delivery and, today, ownership of the IT function for an international SaaS organization — while remaining hands-on with the platforms underneath it.
     </p>
+    <div class="impact-grid" aria-label="Career highlights">
+      <div class="impact-card"><strong data-count="10">10</strong><span>years across IT operations &amp; delivery</span></div>
+      <div class="impact-card"><strong data-count="50" data-suffix="+">50+</strong><span>applications under licence governance</span></div>
+      <div class="impact-card"><strong data-count="2">2</strong><span>regions supported: EMEA + APAC</span></div>
+      <div class="impact-card"><strong data-count="24">24</strong><span>documented delivery milestones</span></div>
+    </div>
 
     <div class="brief">
       <div class="brief-cell">
         <h3>Compiled on</h3>
-        <p>Ownership, not adjacency. Every entry is work I scoped, delivered, or govern personally — not team output I stood near.</p>
+        <p>Work I personally scoped, delivered, governed, or operated — with ownership made explicit.</p>
       </div>
       <div class="brief-cell">
         <h3>Flagship</h3>
-        <p>Function-creating. Established a capability, control, or process that did not exist before. <span id="flagCount">Twelve</span> entries qualify.</p>
+        <p>Capabilities, controls, and processes created from zero. <span id="flagCount">Twelve</span> milestones qualify.</p>
       </div>
       <div class="brief-cell">
         <h3>Included</h3>
-        <p>Engineering alongside management. Policy sets and risk registers sit next to firewall rules and Intune baselines by design.</p>
+        <p>Leadership backed by technical depth: policy and risk sit beside Intune, identity, firewalls, SIEM and infrastructure.</p>
       </div>
       <div class="brief-cell">
         <h3>Scope note</h3>
@@ -1876,5 +1911,55 @@
   }
 })();
 </script>
+
+<script>
+/* Executive motion layer: restrained, informative animation */
+(function(){
+  var root = document.documentElement;
+  var prog = document.getElementById('scrollProgress');
+  function updateProgress(){
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+    if (prog) prog.style.width = Math.max(0, Math.min(100,pct)) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, {passive:true});
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  var mast = document.querySelector('.masthead');
+  if (mast && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    mast.addEventListener('pointermove', function(e){
+      var r = mast.getBoundingClientRect();
+      mast.style.setProperty('--mx', (((e.clientX-r.left)/r.width)*100).toFixed(1)+'%');
+      mast.style.setProperty('--my', (((e.clientY-r.top)/r.height)*100).toFixed(1)+'%');
+    }, {passive:true});
+  }
+
+  var cards = document.querySelectorAll('.impact-card strong[data-count]');
+  var done = false;
+  function animateCounts(){
+    if(done) return; done = true;
+    cards.forEach(function(el){
+      var end = parseInt(el.dataset.count,10)||0, suffix = el.dataset.suffix||'';
+      var start = performance.now(), dur = 850;
+      function tick(now){
+        var p = Math.min(1,(now-start)/dur); var eased = 1-Math.pow(1-p,3);
+        el.textContent = Math.round(end*eased) + suffix;
+        if(p<1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  var grid = document.querySelector('.impact-grid');
+  if(grid && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es,obs){if(es[0].isIntersecting){animateCounts();obs.disconnect();}},{threshold:.35}).observe(grid);
+  } else { animateCounts(); }
+
+  document.querySelectorAll('.sec-head,.era-head').forEach(function(h){
+    var m=document.createElement('div');m.className='section-meter';h.appendChild(m);
+  });
+})();
+</script>
+
 </body>
 </html>
